@@ -16,8 +16,6 @@ echo "Jenkins Install..............!"
 sudo apt-get install -y jenkins 
 sleep 3
 sudo systemctl start jenkins
-sleep 3 
-sudo systemctl status jenkins
 sleep 4
 echo "Installing docker part ..................................!"
 sudo apt update
@@ -32,3 +30,5 @@ sleep 2
 sudo systemctl restart jenkins
 sleep 2 
 sudo systemctl status docker
+sleep 2 
+sudo systemctl status jenkins
